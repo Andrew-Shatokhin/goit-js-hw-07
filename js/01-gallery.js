@@ -35,4 +35,10 @@ function onClick(event) {
       <img src="${urlGallery}" width="800" height="600">
   `);
   instance.show();
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      instance.close();
+    }
+  });
 }
